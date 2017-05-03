@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
   
 
   # 8
-  s.source_files  = 'MASQLiteWrapper/Source/*.{swift}'
+  s.source_files  = 'Source/*.swift'
   #s.source_files = "RWPickFlavor/**/*.{swift}"
 
   # 9

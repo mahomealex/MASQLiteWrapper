@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  SQLiteWrapper
+//  MASQLiteWrapper
 //
-//  Created by Alex on 02/05/2017.
+//  Created by 林东鹏 on 03/05/2017.
 //  Copyright © 2017 Alex. All rights reserved.
 //
 
@@ -16,42 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        //test
-        //setup db
-        DBHelper.sharedInstance.setupDB()
-        
-        //insert or update data
-        let model = TestModel()
-        model.uid = "a"
-        model.age = 24
-        model.isFriend = true
-        DBHelper.operation()?.save(model: model)
-        
-        //update
-        model.age = 20
-        DBHelper.operation()?.save(model: model)
-        
-        //save array
-        DBHelper.operation()?.saveAll(models: [model])
-        
-        //query
-        var array = DBHelper.operation()?.queryAll(TestModel.self)
-        print(array ?? "")
-            // or
-        array = DBHelper.operation()?.queryAll(TestModel()) as? [TestModel]
-        print(array ?? "")
-        
-        
-        //delete
-        DBHelper.operation()?.delete(model: model)
-        //delete by primarykey
-        DBHelper.sharedInstance.delete(uid: model.uid)
-        
-        
-        
-        
-        
         return true
     }
 

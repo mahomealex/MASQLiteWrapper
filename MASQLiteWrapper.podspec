@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   # 1
   s.platform = :ios
   s.ios.deployment_target = '8.0'
-  s.name = "SQLiteWrapper"
+  s.name = "MASQLiteWrapper"
   s.summary = "A nice wrapper for SQLite.swift, imspire by realm."
   s.requires_arc = true
 
@@ -21,14 +21,14 @@ Pod::Spec.new do |s|
 
 
   # 5 - Replace this URL with your own Github page's URL (from the address bar)
-  s.homepage = "https://github.com/mahomealex/SQLiteWrapper"
+  s.homepage = "https://github.com/mahomealex/MASQLiteWrapper"
 
   # For example,
   # s.homepage = "https://github.com/JRG-Developer/RWPickFlavor"
 
 
   # 6 - Replace this URL with your own Git URL from "Quick Setup"
-  s.source       = { :git => "https://github.com/mahomealex/SQLiteWrapper.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/mahomealex/MASQLiteWrapper.git", :tag => "#{s.version}" }
 
   # For example,
   # s.source = { :git => "https://github.com/JRG-Developer/RWPickFlavor.git", :tag => "#{s.version}"}
@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
   
 
   # 8
-  s.source_files  = 'SQLiteWrapper/Source/*.{swift}'
+  s.source_files  = 'MASQLiteWrapper/Source/*.{swift}'
   #s.source_files = "RWPickFlavor/**/*.{swift}"
 
   # 9
